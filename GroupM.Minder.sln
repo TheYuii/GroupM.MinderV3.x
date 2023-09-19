@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRM.UTL", "GRM.UTL\GRM.UTL.csproj", "{E5B6735D-E311-4EF5-9A38-C538764F7A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.App", "GroupM.App\GroupM.App.csproj", "{B836C36A-9642-45AC-A053-C1E92E66E326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.CustomControl", "GroupM.CustomControl\GroupM.CustomControl.csproj", "{9E13555C-EBA6-45AC-8E50-8626414AF834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.DataAccess", "GroupM.DBAccess\GroupM.DataAccess.csproj", "{EE372E93-23DD-4DEC-B11D-AD65A850E470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.UTL", "GroupM.UTL\GroupM.UTL.csproj", "{3AE93E40-FE82-4E97-8781-3D8C28701893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.Minder", "GroupM.Minder\GroupM.Minder.csproj", "{A865D210-0AFF-4B5F-9E88-13544E78C2BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MDF", "Test.MDF\Test.MDF.csproj", "{4C71C0C2-0BED-4931-8D4C-F2F0FD1DE3E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MProprietary", "GroupM.MProprietary\MProprietary.csproj", "{A4020DC4-EB76-4F11-9952-AD9D5F06761F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.AutoGrant.API", "GroupM.AutoGrant.API\GroupM.AutoGrant.API.csproj", "{81937928-6CF0-4598-A8F0-E86D2267623C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.AutoGrant.API", "Test.AutoGrant.API\Test.AutoGrant.API.csproj", "{8DFBBF43-412B-46FF-9B33-031D6947A52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupM.AutoGrant.WebApp", "GroupM.AutoGrant.WebApp\GroupM.AutoGrant.WebApp.csproj", "{F1F2C3EB-19C8-4D66-82AC-16CCB8E4A72A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5B6735D-E311-4EF5-9A38-C538764F7A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B6735D-E311-4EF5-9A38-C538764F7A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B6735D-E311-4EF5-9A38-C538764F7A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B6735D-E311-4EF5-9A38-C538764F7A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B836C36A-9642-45AC-A053-C1E92E66E326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B836C36A-9642-45AC-A053-C1E92E66E326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B836C36A-9642-45AC-A053-C1E92E66E326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B836C36A-9642-45AC-A053-C1E92E66E326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E13555C-EBA6-45AC-8E50-8626414AF834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E13555C-EBA6-45AC-8E50-8626414AF834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E13555C-EBA6-45AC-8E50-8626414AF834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E13555C-EBA6-45AC-8E50-8626414AF834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE372E93-23DD-4DEC-B11D-AD65A850E470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE372E93-23DD-4DEC-B11D-AD65A850E470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE372E93-23DD-4DEC-B11D-AD65A850E470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE372E93-23DD-4DEC-B11D-AD65A850E470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE93E40-FE82-4E97-8781-3D8C28701893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE93E40-FE82-4E97-8781-3D8C28701893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE93E40-FE82-4E97-8781-3D8C28701893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE93E40-FE82-4E97-8781-3D8C28701893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A865D210-0AFF-4B5F-9E88-13544E78C2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A865D210-0AFF-4B5F-9E88-13544E78C2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A865D210-0AFF-4B5F-9E88-13544E78C2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A865D210-0AFF-4B5F-9E88-13544E78C2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C71C0C2-0BED-4931-8D4C-F2F0FD1DE3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C71C0C2-0BED-4931-8D4C-F2F0FD1DE3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C71C0C2-0BED-4931-8D4C-F2F0FD1DE3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C71C0C2-0BED-4931-8D4C-F2F0FD1DE3E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4020DC4-EB76-4F11-9952-AD9D5F06761F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4020DC4-EB76-4F11-9952-AD9D5F06761F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4020DC4-EB76-4F11-9952-AD9D5F06761F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4020DC4-EB76-4F11-9952-AD9D5F06761F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81937928-6CF0-4598-A8F0-E86D2267623C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81937928-6CF0-4598-A8F0-E86D2267623C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81937928-6CF0-4598-A8F0-E86D2267623C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81937928-6CF0-4598-A8F0-E86D2267623C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DFBBF43-412B-46FF-9B33-031D6947A52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DFBBF43-412B-46FF-9B33-031D6947A52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DFBBF43-412B-46FF-9B33-031D6947A52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DFBBF43-412B-46FF-9B33-031D6947A52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F2C3EB-19C8-4D66-82AC-16CCB8E4A72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F2C3EB-19C8-4D66-82AC-16CCB8E4A72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F2C3EB-19C8-4D66-82AC-16CCB8E4A72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F2C3EB-19C8-4D66-82AC-16CCB8E4A72A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31781F35-8D37-4F76-8D48-F16B9C1C7171}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gmapac.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GRM.UTL\\GRM.UTL.csproj
+		SccProjectName1 = GRM.UTL
+		SccLocalPath1 = GRM.UTL
+		SccProjectUniqueName2 = GroupM.App\\GroupM.App.csproj
+		SccProjectName2 = GroupM.App
+		SccLocalPath2 = GroupM.App
+		SccProjectUniqueName3 = GroupM.CustomControl\\GroupM.CustomControl.csproj
+		SccProjectName3 = GroupM.CustomControl
+		SccLocalPath3 = GroupM.CustomControl
+		SccProjectUniqueName4 = GroupM.DBAccess\\GroupM.DataAccess.csproj
+		SccProjectName4 = GroupM.DBAccess
+		SccLocalPath4 = GroupM.DBAccess
+		SccProjectUniqueName5 = GroupM.UTL\\GroupM.UTL.csproj
+		SccProjectName5 = GroupM.UTL
+		SccLocalPath5 = GroupM.UTL
+		SccProjectUniqueName6 = GroupM.Minder\\GroupM.Minder.csproj
+		SccProjectName6 = GroupM.Minder
+		SccLocalPath6 = GroupM.Minder
+		SccProjectUniqueName7 = Test.MDF\\Test.MDF.csproj
+		SccProjectName7 = Test.MDF
+		SccLocalPath7 = Test.MDF
+		SccProjectUniqueName8 = GroupM.MProprietary\\MProprietary.csproj
+		SccProjectName8 = GroupM.MProprietary
+		SccLocalPath8 = GroupM.MProprietary
+		SccProjectUniqueName9 = GroupM.AutoGrant.API\\GroupM.AutoGrant.API.csproj
+		SccProjectName9 = GroupM.AutoGrant.API
+		SccLocalPath9 = GroupM.AutoGrant.API
+		SccProjectUniqueName10 = Test.AutoGrant.API\\Test.AutoGrant.API.csproj
+		SccProjectName10 = Test.AutoGrant.API
+		SccLocalPath10 = Test.AutoGrant.API
+		SccProjectUniqueName11 = GroupM.AutoGrant.WebApp\\GroupM.AutoGrant.WebApp.csproj
+		SccProjectName11 = GroupM.AutoGrant.WebApp
+		SccLocalPath11 = GroupM.AutoGrant.WebApp
+	EndGlobalSection
+EndGlobal

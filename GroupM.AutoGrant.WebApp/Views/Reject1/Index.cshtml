@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Reject";
+    Layout = "~/Views/Shared/AutoGrant_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Index", "Reject1", FormMethod.Post))
+{
+    <div align="center">
+        <input type="hidden" id="Token" name="Token" value="@(ViewBag.Token)">
+        <input type="hidden" id="RequestNo" name="RequestNo" value="@(ViewBag.RequestNo)">
+        <input type="hidden" id="ApproverID" name="ApproverID" value="@(ViewBag.ApproverID)">
+        <input type="hidden" id="ApproverUserID" name="ApproverUserID" value="@(ViewBag.ApproverUserID)">
+        <input type="hidden" id="DelegateUserID" name="DelegateUserID" value="@(ViewBag.DelegateUserID)">
+        <input type="hidden" id="btnCheck" name="btnCheck" value="">
+        <h2>Select reason for rejecting this request..</h2>
+        <table>
+            <tr>
+                <td>
+                    <input type="radio" id="R1" name="rdReason" value="Reason 1 (เหตุผล 1)" onclick="checkReason()">
+                    @Html.Label("Reason 1 (เหตุผล 1)", new { style = "font-family: 'Microsoft Sans Serif'; font-size: 10pt;" })
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <input type="radio" id="R2" name="rdReason" value="Reason 2 (เหตุผล 2)" onclick="checkReason()">
+                    @Html.Label("Reason 2 (เหตุผล 2)", new { style = "font-family: 'Microsoft Sans Serif'; font-size: 10pt;" })
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <input type="radio" id="RO" name="rdReason" value="Other - Please specify" onclick="checkReason()">
+                    @Html.Label("Other - Please specify", new { style = "font-family: 'Microsoft Sans Serif'; font-size: 10pt;" })
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    @Html.TextArea("Reason", new { style = "width: 300px; height: 60px;" })
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td align="right">
+                    <input type="submit" id="btnSubmit" value="✓  SUBMIT" style="background-color: mediumseagreen; color: white; border: none; padding: 5px 8px; display: inline-block" onclick="fCheck()" />
+                    <input type="submit" id="btnCancel" value="✗  CANCEL" style="background-color: crimson; color: white; border: none; padding: 5px 8px; display: inline-block" onclick="fCancel()" />
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            function checkReason() {
+                var r1 = document.getElementById("R1").checked;
+                var r2 = document.getElementById("R2").checked;
+                if (r1 == true || r2 == true) {
+                    document.getElementById("Reason").value = "";
+                    document.getElementById("Reason").disabled = true;
+                }
+                else {
+                    document.getElementById("Reason").disabled = false;
+                }
+            }
+            function fCheck() {
+                var ro = document.getElementById("RO").checked;
+                var rs = document.getElementById("Reason").value;
+                if (ro == true && rs == "") {
+                    document.getElementById("btnCheck").value = "X";
+                    alert("Please input your reason.");
+                }
+                else {
+                    document.getElementById("btnCheck").value = "Submit";
+                }
+            }
+            function fCancel() {
+                document.getElementById("btnCheck").value = "Cancel";
+            }
+            window.onload = function () {
+                var msg = "@ViewBag.Message";
+                if (msg != "") {
+                    alert(msg);
+                }
+            };
+        </script>
+    </div>
+}

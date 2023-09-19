@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{814FFCEE-1752-4DA2-9644-34200C0AC4A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GroupM.Minder.SpotPlanIT</RootNamespace>
+    <AssemblyName>GroupM.Minder.SpotPlanIT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="Implementation_SpotPlan_Control_Numberic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_Numberic.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Control_Numberic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_TextArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_TextArea.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Control_TextArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Export_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Export_Schedule.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Export_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_IT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT_Amendment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT_Amendment.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_IT_Amendment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT_PrintSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT_PrintSC.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_IT_PrintSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_BuyType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_BuyType.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_BuyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Material.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Media.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Media.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_Media.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Vendor.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_AdviceNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_AdviceNote.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Print_AdviceNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_PO.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Print_PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_Schedule.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Print_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Vendor.Designer.cs">
+      <DependentUpon>Master_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIConstant.cs" />
+    <Compile Include="Utility_SearchPopup_CodeName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility_SearchPopup_CodeName.Designer.cs">
+      <DependentUpon>Utility_SearchPopup_CodeName.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Implementation_SpotPlan_Control_Numberic.resx">
+      <DependentUpon>Implementation_SpotPlan_Control_Numberic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Control_TextArea.resx">
+      <DependentUpon>Implementation_SpotPlan_Control_TextArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Export_Schedule.resx">
+      <DependentUpon>Implementation_SpotPlan_Export_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_IT.resx">
+      <DependentUpon>Implementation_SpotPlan_IT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_IT_Amendment.resx">
+      <DependentUpon>Implementation_SpotPlan_IT_Amendment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_IT_PrintSC.resx">
+      <DependentUpon>Implementation_SpotPlan_IT_PrintSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_BuyType.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_BuyType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_Material.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_Media.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_Media.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_Vendor.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Print_AdviceNote.resx">
+      <DependentUpon>Implementation_SpotPlan_Print_AdviceNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Print_PO.resx">
+      <DependentUpon>Implementation_SpotPlan_Print_PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Print_Schedule.resx">
+      <DependentUpon>Implementation_SpotPlan_Print_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Vendor.resx">
+      <DependentUpon>Master_Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Utility_SearchPopup_CodeName.resx">
+      <DependentUpon>Utility_SearchPopup_CodeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroupM.DBAccess\GroupM.DataAccess.csproj">
+      <Project>{ee372e93-23dd-4dec-b11d-ad65a850e470}</Project>
+      <Name>GroupM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GroupM.UTL\GroupM.UTL.csproj">
+      <Project>{3ae93e40-fe82-4e97-8781-3d8c28701893}</Project>
+      <Name>GroupM.UTL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

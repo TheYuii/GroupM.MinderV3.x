@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<configuration>
+  <connectionStrings>
+    <add name="SourceConnectionString" connectionString="Data Source=BKK-SQL01\COMMON;database=Minder_Thai;User id=sa;Password=Groupm#01;" />
+  </connectionStrings>
+
+  <appSettings>
+    <!--Authenticate-->
+    <add key="Server" value="bkk-adc60"/>
+    <add key="Domain" value="AD" />
+    <!--END Authenticate-->
+
+    <add key="DBName" value="BKK-SQL01" />
+    <add key="TemplateWeeklyTrackingReport" value="C:\Documents and Settings\siwa.p\Desktop\Code\GRM.MPA\GRM.MPA\bin\Debug\Report Template\TemplateWeeklyTrackingReport.xlsx" />
+  </appSettings>
+</configuration>

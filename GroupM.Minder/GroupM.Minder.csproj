@@ -1,0 +1,1293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A865D210-0AFF-4B5F-9E88-13544E78C2BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GroupM.Minder</RootNamespace>
+    <AssemblyName>GroupM.MinderDigital</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ManifestCertificateThumbprint>0DC7908910D91B8A336D8224FAD629F8D1195EBD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>GRM.MPA_1_TemporaryKey.pfx</ManifestKeyFile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\chaiwat.i\Documents\MPA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://bkkappp01101:82/</InstallUrl>
+    <ProductName>Minder Pre-Post Buy Analysis %28MPA%29</ProductName>
+    <PublisherName>GroupM</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>43</ApplicationRevision>
+    <ApplicationVersion>3.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.AQETAMRFENGINECOMLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>dll\Interop.AQETAMRFENGINECOMLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\GRM.UTL\bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AutoGrant_Approve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_Approve.Designer.cs">
+      <DependentUpon>AutoGrant_Approve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoGrant_Cancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_Cancel.Designer.cs">
+      <DependentUpon>AutoGrant_Cancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoGrant_Reject_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_Reject_1.Designer.cs">
+      <DependentUpon>AutoGrant_Reject_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoGrant_Reject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_Reject.Designer.cs">
+      <DependentUpon>AutoGrant_Reject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoGrant_RequestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_RequestList.Designer.cs">
+      <DependentUpon>AutoGrant_RequestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoGrant_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_Request.Designer.cs">
+      <DependentUpon>AutoGrant_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Financial_ExportToAdept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financial_ExportToAdept.Designer.cs">
+      <DependentUpon>Financial_ExportToAdept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Financial_GPMInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financial_GPMInvoice.Designer.cs">
+      <DependentUpon>Financial_GPMInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoGrant_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGrant_Main.Designer.cs">
+      <DependentUpon>AutoGrant_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_BuyingBrief.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_BuyingBrief.Designer.cs">
+      <DependentUpon>Implementation_BuyingBrief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_OnAirCheckingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_OnAirCheckingReport.Designer.cs">
+      <DependentUpon>Implementation_OnAirCheckingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_ES_Amendment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_ES_Amendment.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_ES_Amendment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_ES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_ES.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_ES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_OD_Amendment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_OD_Amendment.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_OD_Amendment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_OD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_OD.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_OD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_SpotType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_SpotType.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_SpotType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_BuyType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_BuyType.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_BuyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Material.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_RateCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_RateCard.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_RateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_AdviceNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_AdviceNote.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Print_AdviceNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_IT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT_Amendment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_IT_Amendment.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_IT_Amendment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_TV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_TV.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_TV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_TV_FC_Amendment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_TV_FC_Amendment.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_TV_FC_Amendment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_TextArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_TextArea.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Control_TextArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_Schedule.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Print_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Print_PO.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Print_PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_ClientAgencyFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_ClientAgencyFee.Designer.cs">
+      <DependentUpon>Master_ClientAgencyFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_ClientBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_ClientBrand.Designer.cs">
+      <DependentUpon>Master_ClientBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_BuyingBrief_IncidentTrackingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_BuyingBrief_IncidentTrackingList.Designer.cs">
+      <DependentUpon>Implementation_BuyingBrief_IncidentTrackingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_ClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_ClientList.Designer.cs">
+      <DependentUpon>Master_ClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_BuyingBriefList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_BuyingBriefList.Designer.cs">
+      <DependentUpon>Implementation_BuyingBriefList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_BuyingBrief_IncidentTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_BuyingBrief_IncidentTracking.Designer.cs">
+      <DependentUpon>Implementation_BuyingBrief_IncidentTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_AdeptMediaType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_AdeptMediaType.Designer.cs">
+      <DependentUpon>Master_AdeptMediaType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MediaType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_MediaType.Designer.cs">
+      <DependentUpon>Master_MediaType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_AdeptMediaTypeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_AdeptMediaTypeList.Designer.cs">
+      <DependentUpon>Master_AdeptMediaTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MediaTypeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_MediaTypeList.Designer.cs">
+      <DependentUpon>Master_MediaTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_ProductList.Designer.cs">
+      <DependentUpon>Master_ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Product.Designer.cs">
+      <DependentUpon>Master_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_VendorContractPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_VendorContractPeriod.Designer.cs">
+      <DependentUpon>Master_VendorContractPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MediaSubType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_MediaSubType.Designer.cs">
+      <DependentUpon>Master_MediaSubType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MediaSubTypeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_MediaSubTypeList.Designer.cs">
+      <DependentUpon>Master_MediaSubTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MediaSubType_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_MediaSubType_Report.Designer.cs">
+      <DependentUpon>Master_MediaSubType_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_TV_FC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_TV_FC.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_TV_FC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_VendorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_VendorList.Designer.cs">
+      <DependentUpon>Master_VendorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Vendor.Designer.cs">
+      <DependentUpon>Master_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Office.Designer.cs">
+      <DependentUpon>Master_Office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_OfficeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_OfficeList.Designer.cs">
+      <DependentUpon>Master_OfficeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Client_VendorPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Client_VendorPeriod.Designer.cs">
+      <DependentUpon>Master_Client_VendorPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_VendorPreferPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_VendorPreferPeriod.Designer.cs">
+      <DependentUpon>Master_VendorPreferPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaInvestment_Opt-inReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaInvestment_Opt-inReport.Designer.cs">
+      <DependentUpon>MediaInvestment_Opt-inReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_Numberic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Control_Numberic.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Control_Numberic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpotPlan_SelectMedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpotPlan_SelectMedia.Designer.cs">
+      <DependentUpon>SpotPlan_SelectMedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System_AuditICFR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System_AuditICFR.Designer.cs">
+      <DependentUpon>System_AuditICFR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility_MultipleSelect_CodeName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility_MultipleSelect_CodeName.Designer.cs">
+      <DependentUpon>Utility_MultipleSelect_CodeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Media.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Media.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_Media.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Popup_Vendor.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Popup_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Export_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation_SpotPlan_Export_Schedule.Designer.cs">
+      <DependentUpon>Implementation_SpotPlan_Export_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility_SearchPopup_CodeName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility_SearchPopup_CodeName.Designer.cs">
+      <DependentUpon>Utility_SearchPopup_CodeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import AGB File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import AGB File.Designer.cs">
+      <DependentUpon>Import AGB File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Client.Designer.cs">
+      <DependentUpon>Master_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA005_CPRPMonitoringByWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA005_CPRPMonitoringByWeek.designer.cs">
+      <DependentUpon>MPA005_CPRPMonitoringByWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA008_TVCalendar_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA008_TVCalendar_Material.Designer.cs">
+      <DependentUpon>MPA008_TVCalendar_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA009_Reach_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA009_Reach_Test.Designer.cs">
+      <DependentUpon>MPA009_Reach_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA009_Reach_ByWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA009_Reach_ByWeek.Designer.cs">
+      <DependentUpon>MPA009_Reach_ByWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA010_Reach_Weekly_SearchCondition_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA010_Reach_Weekly_SearchCondition_2.Designer.cs">
+      <DependentUpon>MPA010_Reach_Weekly_SearchCondition_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA010_Reach_Weekly_SearchCondition_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA010_Reach_Weekly_SearchCondition_1.Designer.cs">
+      <DependentUpon>MPA010_Reach_Weekly_SearchCondition_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA003_MediaSpending2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA003_MediaSpending2.Designer.cs">
+      <DependentUpon>MPA003_MediaSpending2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA011_Reach_Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA011_Reach_Summary.Designer.cs">
+      <DependentUpon>MPA011_Reach_Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA010_Reach_SearchCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA010_Reach_SearchCondition.Designer.cs">
+      <DependentUpon>MPA010_Reach_SearchCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA007_CreateOwnDayPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA007_CreateOwnDayPart.Designer.cs">
+      <DependentUpon>MPA007_CreateOwnDayPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA004_PlanCPRPByBuyingBrief.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA004_PlanCPRPByBuyingBrief.Designer.cs">
+      <DependentUpon>MPA004_PlanCPRPByBuyingBrief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainApp.cs" />
+    <Compile Include="MPA000_MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA000_MainFrame.designer.cs">
+      <DependentUpon>MPA000_MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA001_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA001_Login.Designer.cs">
+      <DependentUpon>MPA001_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA002_SearchCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA002_SearchCondition.Designer.cs">
+      <DependentUpon>MPA002_SearchCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA006_ExportReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA006_ExportReport.Designer.cs">
+      <DependentUpon>MPA006_ExportReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA009_Reach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA009_Reach.Designer.cs">
+      <DependentUpon>MPA009_Reach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA012_SaveTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA012_SaveTemplate.Designer.cs">
+      <DependentUpon>MPA012_SaveTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPA013_LoadTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA013_LoadTemplate.Designer.cs">
+      <DependentUpon>MPA013_LoadTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility_SearchPopup_CodeName3Col.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility_SearchPopup_CodeName3Col.designer.cs">
+      <DependentUpon>Utility_SearchPopup_CodeName3Col.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoGrant_Approve.resx">
+      <DependentUpon>AutoGrant_Approve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoGrant_Cancel.resx">
+      <DependentUpon>AutoGrant_Cancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoGrant_Reject_1.resx">
+      <DependentUpon>AutoGrant_Reject_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoGrant_Reject.resx">
+      <DependentUpon>AutoGrant_Reject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoGrant_RequestList.resx">
+      <DependentUpon>AutoGrant_RequestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoGrant_Request.resx">
+      <DependentUpon>AutoGrant_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financial_ExportToAdept.resx">
+      <DependentUpon>Financial_ExportToAdept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financial_GPMInvoice.resx">
+      <DependentUpon>Financial_GPMInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoGrant_Main.resx">
+      <DependentUpon>AutoGrant_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_BuyingBrief.resx">
+      <DependentUpon>Implementation_BuyingBrief.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_OnAirCheckingReport.resx">
+      <DependentUpon>Implementation_OnAirCheckingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_ES_Amendment.resx">
+      <DependentUpon>Implementation_SpotPlan_ES_Amendment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_ES.resx">
+      <DependentUpon>Implementation_SpotPlan_ES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_OD_Amendment.resx">
+      <DependentUpon>Implementation_SpotPlan_OD_Amendment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_OD.resx">
+      <DependentUpon>Implementation_SpotPlan_OD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_SpotType.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_SpotType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_BuyType.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_BuyType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_Material.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_RateCard.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_RateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Print_AdviceNote.resx">
+      <DependentUpon>Implementation_SpotPlan_Print_AdviceNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_IT.resx">
+      <DependentUpon>Implementation_SpotPlan_IT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_IT_Amendment.resx">
+      <DependentUpon>Implementation_SpotPlan_IT_Amendment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_TV.resx">
+      <DependentUpon>Implementation_SpotPlan_TV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_TV_FC_Amendment.resx">
+      <DependentUpon>Implementation_SpotPlan_TV_FC_Amendment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Control_TextArea.resx">
+      <DependentUpon>Implementation_SpotPlan_Control_TextArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Print_Schedule.resx">
+      <DependentUpon>Implementation_SpotPlan_Print_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Print_PO.resx">
+      <DependentUpon>Implementation_SpotPlan_Print_PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_ClientAgencyFee.resx">
+      <DependentUpon>Master_ClientAgencyFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_ClientBrand.resx">
+      <DependentUpon>Master_ClientBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_BuyingBrief_IncidentTrackingList.resx">
+      <DependentUpon>Implementation_BuyingBrief_IncidentTrackingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_ClientList.resx">
+      <DependentUpon>Master_ClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_BuyingBriefList.resx">
+      <DependentUpon>Implementation_BuyingBriefList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_BuyingBrief_IncidentTracking.resx">
+      <DependentUpon>Implementation_BuyingBrief_IncidentTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_AdeptMediaType.resx">
+      <DependentUpon>Master_AdeptMediaType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_MediaType.resx">
+      <DependentUpon>Master_MediaType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_AdeptMediaTypeList.resx">
+      <DependentUpon>Master_AdeptMediaTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_MediaTypeList.resx">
+      <DependentUpon>Master_MediaTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_ProductList.resx">
+      <DependentUpon>Master_ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Product.resx">
+      <DependentUpon>Master_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_VendorContractPeriod.resx">
+      <DependentUpon>Master_VendorContractPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_MediaSubType.resx">
+      <DependentUpon>Master_MediaSubType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_MediaSubTypeList.resx">
+      <DependentUpon>Master_MediaSubTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_MediaSubType_Report.resx">
+      <DependentUpon>Master_MediaSubType_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_TV_FC.resx">
+      <DependentUpon>Implementation_SpotPlan_TV_FC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_VendorList.resx">
+      <DependentUpon>Master_VendorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Vendor.resx">
+      <DependentUpon>Master_Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Office.resx">
+      <DependentUpon>Master_Office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_OfficeList.resx">
+      <DependentUpon>Master_OfficeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Client_VendorPeriod.resx">
+      <DependentUpon>Master_Client_VendorPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_VendorPreferPeriod.resx">
+      <DependentUpon>Master_VendorPreferPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaInvestment_Opt-inReport.resx">
+      <DependentUpon>MediaInvestment_Opt-inReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Control_Numberic.resx">
+      <DependentUpon>Implementation_SpotPlan_Control_Numberic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpotPlan_SelectMedia.resx">
+      <DependentUpon>SpotPlan_SelectMedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System_AuditICFR.resx">
+      <DependentUpon>System_AuditICFR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility_MultipleSelect_CodeName.resx">
+      <DependentUpon>Utility_MultipleSelect_CodeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_Media.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_Media.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Popup_Vendor.resx">
+      <DependentUpon>Implementation_SpotPlan_Popup_Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation_SpotPlan_Export_Schedule.resx">
+      <DependentUpon>Implementation_SpotPlan_Export_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility_SearchPopup_CodeName.resx">
+      <DependentUpon>Utility_SearchPopup_CodeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import AGB File.resx">
+      <DependentUpon>Import AGB File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Client.resx">
+      <DependentUpon>Master_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA005_CPRPMonitoringByWeek.resx">
+      <DependentUpon>MPA005_CPRPMonitoringByWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA008_TVCalendar_Material.resx">
+      <DependentUpon>MPA008_TVCalendar_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA009_Reach_Test.resx">
+      <DependentUpon>MPA009_Reach_Test.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA009_Reach_ByWeek.resx">
+      <DependentUpon>MPA009_Reach_ByWeek.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA010_Reach_Weekly_SearchCondition_2.resx">
+      <DependentUpon>MPA010_Reach_Weekly_SearchCondition_2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA010_Reach_Weekly_SearchCondition_1.resx">
+      <DependentUpon>MPA010_Reach_Weekly_SearchCondition_1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA003_MediaSpending2.resx">
+      <DependentUpon>MPA003_MediaSpending2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA011_Reach_Summary.resx">
+      <DependentUpon>MPA011_Reach_Summary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA010_Reach_SearchCondition.resx">
+      <DependentUpon>MPA010_Reach_SearchCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA007_CreateOwnDayPart.resx">
+      <DependentUpon>MPA007_CreateOwnDayPart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA004_PlanCPRPByBuyingBrief.resx">
+      <DependentUpon>MPA004_PlanCPRPByBuyingBrief.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA000_MainFrame.resx">
+      <DependentUpon>MPA000_MainFrame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA001_Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPA001_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA002_SearchCondition.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPA002_SearchCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA006_ExportReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPA006_ExportReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA009_Reach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPA009_Reach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA012_SaveTemplate.resx">
+      <DependentUpon>MPA012_SaveTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA013_LoadTemplate.resx">
+      <DependentUpon>MPA013_LoadTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPA008_TVCalendar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPA008_TVCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Utility_SearchPopup_CodeName3Col.resx">
+      <DependentUpon>Utility_SearchPopup_CodeName3Col.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GRM.MPA_1_TemporaryKey.pfx" />
+    <None Include="GRM.MPA_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MPA008_TVCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPA008_TVCalendar.Designer.cs">
+      <DependentUpon>MPA008_TVCalendar.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="dll\Interop.AQETAMRFENGINECOMLib.dll" />
+    <Content Include="img\GroupMLogo.ico" />
+    <Content Include="img\MontlyTVScheduleSupplierReport.jpg" />
+    <Content Include="img\WeeklyTrackingReport.jpg" />
+    <None Include="Resources\backward.png" />
+    <Content Include="Resources\home.png" />
+    <None Include="Resources\icons8-search-48.png" />
+    <Content Include="Resources\list %283%29.png" />
+    <Content Include="Resources\the list.png" />
+    <None Include="Resources\menu_approval_list.png" />
+    <None Include="Resources\menu_request_list.png" />
+    <None Include="Resources\menu_create.png" />
+    <None Include="Resources\paper.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\list %282%29.png" />
+    <None Include="Resources\checklist.png" />
+    <None Include="Resources\1426486.png" />
+    <None Include="Resources\1312176.png" />
+    <None Include="Resources\1312190.png" />
+    <None Include="Resources\1312185.png" />
+    <None Include="Resources\Approver_User.png" />
+    <Content Include="Resources\Approve_Approve.png" />
+    <Content Include="Resources\Approve_Expire.png" />
+    <Content Include="Resources\Approve_Partial.png" />
+    <Content Include="Resources\Approve_Pending.png" />
+    <Content Include="Resources\Approve_Reject.png" />
+    <Content Include="Resources\bg_login21.jpg" />
+    <None Include="Resources\LogoGroupM.png" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\survey.png" />
+    <None Include="Resources\By Agency.png" />
+    <None Include="Resources\By Office.png" />
+    <None Include="Resources\By Copy Other Permission.png" />
+    <None Include="Resources\By Client.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\delete-alt.png" />
+    <None Include="Resources\save-alt.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\loader_anim.gif" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\ic_list_mimetype_excel.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\add1.png" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Report Template\TemplateMonthlyTVScheduleSupplierReport.xlsx" />
+    <None Include="Report Template\TemplateWeeklyTrackingReport.xlsx" />
+    <None Include="Resources\misc green.png" />
+    <None Include="Resources\bg_login2.jpg" />
+    <None Include="Resources\grpmlogo.bmp" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.png" />
+    <None Include="app.config" />
+    <None Include="Resources\excel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Data.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v11.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v11.2.Xmla">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v11.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v11.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Sparkline.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.DirectoryServices.AccountManagement">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroupM.CustomControl\GroupM.CustomControl.csproj">
+      <Project>{9E13555C-EBA6-45AC-8E50-8626414AF834}</Project>
+      <Name>GroupM.CustomControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GroupM.DBAccess\GroupM.DataAccess.csproj">
+      <Project>{ee372e93-23dd-4dec-b11d-ad65a850e470}</Project>
+      <Name>GroupM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GroupM.MProprietary\MProprietary.csproj">
+      <Project>{A4020DC4-EB76-4F11-9952-AD9D5F06761F}</Project>
+      <Name>MProprietary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GroupM.UTL\GroupM.UTL.csproj">
+      <Project>{3ae93e40-fe82-4e97-8781-3d8c28701893}</Project>
+      <Name>GroupM.UTL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
